@@ -17,7 +17,11 @@ export default new Router({
     }, {
       path: '/button',
       name: 'button',
-      component: () => import(/* webpackChunkName: "button" */ './testsDemo/button/button.vue'),
+      component: () => import(/* webpackChunkName: "button" */ './example/button/button.vue'),
     },
+    {
+      path: '/radio',
+      component: () => import('./example/radio.vue'),
+    }
   ],
 });
